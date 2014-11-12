@@ -3,7 +3,6 @@ package;
 import kha.math.Vector2;
 import kha.math.Matrix3;
 
-@:allow(TestEnv)
 class Camera
 {
 	
@@ -11,7 +10,7 @@ class Camera
 	
 	public var matrix:Matrix3 = Matrix3.identity();
 	
-	var position:Vector2 = new Vector2(0, 0);
+	var position:Vector2 = new Vector2(320, 240);
 	var offset:Vector2 = new Vector2(320, 240);
 	var scale:Vector2 = new Vector2(1, 1);
 	var rotation:Float = 0;
@@ -35,10 +34,10 @@ class Camera
 	
 	private function updateMatrix()
 	{
-		matrix = Matrix3.translation(-(position.x + offset.x), -(position.y + offset.y)) *
+		matrix = Matrix3.translation(-position.x + offset.x, -position.y + offset.y) *
 			 Matrix3.scale(scale.x * zoom, scale.y * zoom) *
 			 Matrix3.rotation(rotation * Math.PI / 180) *
-			 Matrix3.translation(offset.x, offset.y);
+			 Matrix3.translation(-offset.x, -offset.y);
 	}
 	
 	private function handleInput(delta:Float)

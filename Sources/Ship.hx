@@ -11,7 +11,7 @@ import kha.math.Matrix3;
 class Ship
 {
 	
-	var position:Vector2 = new Vector2(0, 0);
+	var position:Vector2 = new Vector2(320, 240);
 	var offset:Vector2 = new Vector2(0, 0);
 	var scale:Vector2 = new Vector2(1, 1);
 	var rotation:Float = 0;

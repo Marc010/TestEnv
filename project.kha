@@ -13,16 +13,16 @@
 			"name": "Arial14.kravur"
 		},
 		{
-			"id": "c5b76ba1-da89-4e94-8618-d810f194032d",
-			"type": "blob",
-			"file": "Arimo20.kravur",
-			"name": "Arimo20.kravur"
-		},
-		{
 			"id": "26e51a4f-655c-4be6-afbc-6d4918fa60a7",
 			"type": "image",
 			"file": "playerShip1_red.png",
 			"name": "playerShip1_red"
+		},
+		{
+			"id": "c5b76ba1-da89-4e94-8618-d810f194032d",
+			"type": "blob",
+			"file": "Arimo20.kravur",
+			"name": "Arimo20.kravur"
 		}
 	],
 	"rooms": [
