@@ -1,30 +1,40 @@
 {
 	"format": 1,
-	"game":
-	{
+	"game": {
 		"name": "Ploing",
 		"width": 640,
 		"height": 480
 	},
-	"assets":
-	[
+	"assets": [
 		{
 			"id": "a0e2fbd0-2631-11e3-8224-0800200c9a66",
 			"type": "blob",
 			"file": "Arial14.kravur",
 			"name": "Arial14.kravur"
+		},
+		{
+			"id": "26e51a4f-655c-4be6-afbc-6d4918fa60a7",
+			"type": "image",
+			"file": "playerShip1_red.png",
+			"name": "playerShip1_red"
+		},
+		{
+			"id": "c5b76ba1-da89-4e94-8618-d810f194032d",
+			"type": "blob",
+			"file": "Arimo20.kravur",
+			"name": "Arimo20.kravur"
 		}
 	],
-	"rooms":
-	[
+	"rooms": [
 		{
-			"id" : "c1d8c9f0-2631-11e3-8224-0800200c9a66",
-			"name": "level1",
+			"id": "7d923db2-7cf8-40c3-99c6-2744dfebf4b4",
+			"name": "main",
 			"parent": null,
 			"neighbours": [],
-			"assets":
-			[
-				"a0e2fbd0-2631-11e3-8224-0800200c9a66"
+			"assets": [
+				"a0e2fbd0-2631-11e3-8224-0800200c9a66",
+				"26e51a4f-655c-4be6-afbc-6d4918fa60a7",
+				"c5b76ba1-da89-4e94-8618-d810f194032d"
 			]
 		}
 	]
