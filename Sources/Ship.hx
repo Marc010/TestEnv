@@ -1,5 +1,6 @@
 package;
 
+import kha.Color;
 import kha.graphics2.Graphics;
 import kha.Image;
 import kha.input.Keyboard;
@@ -11,7 +12,7 @@ import kha.math.Matrix3;
 class Ship
 {
 	
-	var position:Vector2 = new Vector2(320, 240);
+	var position:Vector2 = new Vector2(0, 0);
 	var offset:Vector2 = new Vector2(0, 0);
 	var scale:Vector2 = new Vector2(1, 1);
 	var rotation:Float = 0;
@@ -36,13 +37,13 @@ class Ship
 	
 	public function render(g:Graphics)
 	{
-		var matrix = Matrix3.translation(position.x + offset.x, position.y + offset.y) *
+		var matrix = Matrix3.translation(position.x, position.y) *
 					 Matrix3.scale(scale.x * zoom, scale.y * zoom) *
 					 Matrix3.rotation(rotation * Math.PI / 180) *
 					 Matrix3.translation(-offset.x, -offset.y);
 		
 		g.pushTransformation(Camera.main.matrix * matrix);
-		g.drawImage(image, 0, 0);
+		g.drawImage(image, 0, 0);		
 		g.popTransformation();
 	}
 	
